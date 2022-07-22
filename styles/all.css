@@ -1,0 +1,52 @@
+#board{ 
+
+	margin: 2.5vw;
+	display: flex;
+	flex-direction: column;
+
+}
+
+div[id ^= "row"]{ display: flex; }
+
+img{ width: calc(100% - 10px); }
+
+img[src *= "pawn"]{ width: calc(100% - 15px); }
+
+.tiles{
+
+	width: 5vw;
+	height: 5vw;
+	padding: 0.5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.moves{
+
+	height: 40%;
+	width: 40%;
+	background-color: var(--verdeEscuro);
+	border-radius: 100%;
+	opacity: 80%;
+
+}
+
+.tiles > div{
+
+	display: flex;
+	justify-content: center;
+
+}
+
+span{
+
+	float: right;
+	font-size: 0.8em;
+
+}
+
+.greenTile{ background-color: var(--verde); }
+
+.whiteTile{ background-color: var(--branco); }
